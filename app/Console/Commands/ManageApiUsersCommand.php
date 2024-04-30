@@ -15,15 +15,7 @@ class ManageApiUsersCommand extends Command
 
     public function handle(): void
     {
-        $action = select(
-            'What would you like to do?',
-            ['Get existing user', 'Create new user']
-        );
-
-        match ($action) {
-            'Get existing user' => $this->getUser(),
-            'Create new user'   => $this->createUser(),
-        };
+        $this->createUser();
     }
 
     public function createUser()
