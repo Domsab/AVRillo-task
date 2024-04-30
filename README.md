@@ -54,11 +54,14 @@ vendor/bin/sail npm run dev
 ```
 ## Usage
 
-Create a user via http://localhost or by running the following command
+Create a new user using the following command take note of the returned api token
 
 ```sh
 ./vendor/bin/sail artisan api:manage-users
 ```
+
+Login via http://localhost/ using email password and api token
+
 ### Tests
 
 ```sh

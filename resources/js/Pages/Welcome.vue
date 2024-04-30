@@ -117,8 +117,7 @@ getQuotes();
                                         <h2
                                             class="text-xl font-semibold text-black dark:text-white"
                                         >
-                                            Welcome to the Kanye West Quote
-                                            Generator API!
+                                            Welcome to the Kanye West Quote Generator API!
                                         </h2>
 
                                         <p class="mt-4 text-sm/relaxed">
@@ -160,13 +159,6 @@ getQuotes();
                                                 Log In
                                             </Link>
 
-                                            <Link
-                                                v-if="canRegister"
-                                                :href="route('register')"
-                                                class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
-                                            >
-                                                Register
-                                            </Link>
                                         </div>
                                     </div>
                                 </div>
