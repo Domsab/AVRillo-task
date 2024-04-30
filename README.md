@@ -3,55 +3,52 @@
 ## Description
 > Rest API serving random Kanye West quotes
 
-A secure API connecting to the kanye.rest API
-## Contents
-
-- [[#Getting Started]]
-	- [[#Installation]]
-- [[#Usage]]
-	- [[#Features]]
-	- [[#Tests]]
-- [[#Tests]]
-- [[#Change Log]]
-- [[#Licence]]
-## Getting Started
-
-### Prerequisites
-
-The things you need before installing the software.
-
-- PHP 8.2
-- Composer
-- Node
-- Docker
-### Installation
+A secure API connecting to the kanye.rest APIn
 
 Clone from Github
 
 ```sh
-
+git clone git@github.com:Domsab/AVRillo-task.git;
+cd AVRillo-task/;
 ```
 
+Composer install
 
+```sh
+composer install
+```
+
+Setup Laravel .env
+
+```sh
+cp .env.example .env
+php artisan key:generate
+```
+
+Run Laravel Sail in detached mode
+
+```sh
+vendor/bin/sail up -d
+```
+
+Install npm packages
+
+```sh
+npm install
+```
+
+And finally run the application
+
+```sh
+vendor/bin/sail npm run dev
+```
 ## Usage
 
 Create a user via http://localhost
 
-Or using the command line
-
-```bash
-
-```
-
-_For more examples and usage, please refer to the [Wiki][wiki]._
-### Features
-
 ### Tests
-
-Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms.
 
 ```sh
 ./vendor/bin/sail test
 ```
-
 
